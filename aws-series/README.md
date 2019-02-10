@@ -1,4 +1,3 @@
-### m09:  
   ---
 #### mariaDB  
     * 用dockerCompose，製作一個具有jupyter 與 mariaDB 兩個Container的環境  
@@ -9,7 +8,7 @@
 
   ---
 
-#### mysql  
+#### m10:mysql  
     * jupyter 開啟時，已經自動安裝PyMySQL套件  
     * 開啟一個rds-example.ipynb  
     * 嘗試使用PyMySQL套件連結至mysql  
