@@ -53,3 +53,10 @@
       * 新增 內容  
       * 推送 內容  
   ---
+
+#### m19:redis  
+    * 查詢AWS ElasticCache,支援的Redis版本號  
+    * 並選擇相應的Redis版本號docker,添加至docker compose中  
+    * 並在jupyter的dockerfile中，追加redis的python官方套件  
+    * 並連結redis進行資料存取操作  
+  ---

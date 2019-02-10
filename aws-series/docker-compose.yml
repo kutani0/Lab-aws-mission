@@ -69,3 +69,12 @@ services:
     depends_on:
       - sqs
 #=============================================================================
+  redis:
+    image: redis
+    container_name: cc104.redis.local
+    command: redis-server --requirepass haha1234
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./data_redis:/data
+#=============================================================================
