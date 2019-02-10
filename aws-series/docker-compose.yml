@@ -34,3 +34,13 @@ services:
     volumes:
       - ./data_mysql/:/var/lib/mysql
 #=============================================================================
+  dynamodb:
+    build: ./dfile/dynamo/
+    container_name: cc104.dynamodb.local
+    volumes:
+      - ./data_dynamo:/home/dynamodblocal/data
+    ports:
+      - 8000:8000
+    command: -jar DynamoDBLocal.jar -dbPath ./data
+#=============================================================================
+
