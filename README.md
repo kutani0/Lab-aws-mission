@@ -45,3 +45,13 @@
     * 若用戶傳入 id=123，則傳回json格式{"userId":123}  
 
   ---
+
+### m08:  
+  ---
+    * FlaskServer入門2 - QueryString  
+    * 撰寫一個Flask Server  
+    * 為user設計一個端口  
+    * 用戶能對此端口用POST方法訪問，挾帶任意json body  
+    * 將此body轉存成檔案，存在伺服器上，並將此檔案上傳至iii-tutorial-v2桶內的student{座號}資料夾下  
+
+  ---
