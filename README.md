@@ -56,7 +56,7 @@
 
   ---
 
-### aws(m09):
+### aws(m09+m10):
 ---
 #### mariaDB  
     * 用dockerCompose，製作一個具有jupyter 與 mariaDB 兩個Container的環境  
