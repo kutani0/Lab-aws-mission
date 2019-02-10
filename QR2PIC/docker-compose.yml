@@ -1,0 +1,18 @@
+version: '3'
+services:
+#=============================================================================
+  jupyter-tutorial:
+    build: ./dfile/note/
+    container_name: m4.jupyter
+    user: root
+    environment:
+      - GRANT_SUDO=yes
+    ports:
+      - "8888:8888"
+      - "5000:5000"
+    volumes:
+      - ./note/:/home/jovyan/work/
+      - ./.aws:/home/jovyan/.aws/
+    command: start-notebook.sh --NotebookApp.token=''
+#=============================================================================
+
