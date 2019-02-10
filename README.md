@@ -56,7 +56,7 @@
 
   ---
 
-### aws(m09+m10+m11+m12+m13):
+### aws(m09+m10+m11+m12+m13+m18):
 ---
 #### m09:mariaDB  
     * 用dockerCompose，製作一個具有jupyter 與 mariaDB 兩個Container的環境  
@@ -101,5 +101,15 @@
       * get data from bucket  
       * delete data from bucket  
       * list all bucket (fask環境無此功能)  
+  ---
+
+#### m18:sns  
+    * 追加aws sns docker  
+    * 並使sns能夠 與 環境中的sqs 進行串接  
+    * sns 可以發消息 進入sqs  
+    * 另外可用Python對sns進行topic  
+      * 創建 內容  
+      * 新增 內容  
+      * 推送 內容  
   ---
 

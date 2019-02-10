@@ -59,3 +59,13 @@ services:
     volumes:
       - ./data_s3:/fakes3_root
 #=============================================================================
+  sns:
+    image: s12v/sns
+    container_name: cc104.sns.local
+    ports:
+      - "9911:9911"
+    volumes:
+      - ./config_sns:/etc/sns/
+    depends_on:
+      - sqs
+#=============================================================================
