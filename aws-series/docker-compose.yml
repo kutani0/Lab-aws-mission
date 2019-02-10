@@ -24,3 +24,13 @@ services:
     volumes:
       - ./data_mariadb/:/var/lib/mysql
 #=============================================================================
+  db2:
+    image: mysql
+    container_name: cc104.mysql.local
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: hahaha
+    volumes:
+      - ./data_mysql/:/var/lib/mysql
+#=============================================================================
