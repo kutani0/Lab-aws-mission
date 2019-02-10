@@ -43,4 +43,11 @@ services:
       - 8000:8000
     command: -jar DynamoDBLocal.jar -dbPath ./data
 #=============================================================================
-
+  sqs:
+    image: s12v/elasticmq
+    container_name: cc104.sqs.local
+    ports:
+      - "9324:9324"
+    volumes:
+      - ./config_sqs:/etc
+#=============================================================================
